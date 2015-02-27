@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="dE1-U6-lCE" customClass="LDMergeRequestsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dE1-U6-lCE" id="zM3-ip-ijH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#XX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CA-vd-6hb">
+                        <rect key="frame" x="10" y="10" width="22" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="2vp-pY-xep"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTs-9V-Ckm">
+                        <rect key="frame" x="10" y="33" width="38" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXT-Qz-Efk">
+                        <rect key="frame" x="10" y="56" width="41" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldX-rA-6YL">
+                        <rect key="frame" x="35" y="10" width="221" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√ Merged" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBN-4T-BT1">
+                        <rect key="frame" x="257" y="10" width="53" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="SMo-ha-dqv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7CA-vd-6hb" firstAttribute="top" secondItem="zM3-ip-ijH" secondAttribute="top" constant="10" id="0oh-Rr-tH4"/>
+                    <constraint firstAttribute="trailing" secondItem="ZBN-4T-BT1" secondAttribute="trailing" constant="10" id="A8G-tz-cto"/>
+                    <constraint firstItem="rXT-Qz-Efk" firstAttribute="top" secondItem="UTs-9V-Ckm" secondAttribute="bottom" constant="8" symbolic="YES" id="IW6-lg-qdP"/>
+                    <constraint firstItem="UTs-9V-Ckm" firstAttribute="leading" secondItem="rXT-Qz-Efk" secondAttribute="leading" id="Q96-it-ySS"/>
+                    <constraint firstItem="UTs-9V-Ckm" firstAttribute="top" secondItem="7CA-vd-6hb" secondAttribute="bottom" constant="8" symbolic="YES" id="aPC-op-bnF"/>
+                    <constraint firstItem="ZBN-4T-BT1" firstAttribute="leading" secondItem="ldX-rA-6YL" secondAttribute="trailing" constant="1" id="eOZ-Ko-HpO"/>
+                    <constraint firstItem="7CA-vd-6hb" firstAttribute="baseline" secondItem="ldX-rA-6YL" secondAttribute="baseline" id="eR2-oF-vft"/>
+                    <constraint firstItem="ZBN-4T-BT1" firstAttribute="baseline" secondItem="ldX-rA-6YL" secondAttribute="baseline" id="f5d-aK-Hed"/>
+                    <constraint firstItem="7CA-vd-6hb" firstAttribute="leading" secondItem="zM3-ip-ijH" secondAttribute="leading" constant="10" id="gTx-jx-4js"/>
+                    <constraint firstItem="ldX-rA-6YL" firstAttribute="leading" secondItem="7CA-vd-6hb" secondAttribute="trailing" constant="3" id="jqh-sw-RVl"/>
+                    <constraint firstItem="7CA-vd-6hb" firstAttribute="leading" secondItem="UTs-9V-Ckm" secondAttribute="leading" id="rga-uj-iiC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="author" destination="UTs-9V-Ckm" id="FLc-7v-XZb"/>
+                <outlet property="mergeRequestID" destination="7CA-vd-6hb" id="QD9-Hc-S4x"/>
+                <outlet property="state" destination="ZBN-4T-BT1" id="okb-dW-xVF"/>
+                <outlet property="title" destination="ldX-rA-6YL" id="Mo4-et-hcf"/>
+                <outlet property="update" destination="rXT-Qz-Efk" id="PD9-F2-bbb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="yr5-56-OVm" customClass="LDCommitsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yr5-56-OVm" id="ZAN-VJ-Ifx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short ID   " lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hu-0J-k3L">
+                        <rect key="frame" x="10" y="10" width="93" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="0Z4-w7-Yrq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSr-ih-lqY">
+                        <rect key="frame" x="106" y="10" width="204" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYG-Kz-6ds">
+                        <rect key="frame" x="10" y="36" width="38" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aR-jx-dwl">
+                        <rect key="frame" x="284" y="35" width="26" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cSr-ih-lqY" firstAttribute="top" secondItem="7hu-0J-k3L" secondAttribute="top" id="5PG-Ej-mVS"/>
+                    <constraint firstAttribute="trailing" secondItem="cSr-ih-lqY" secondAttribute="trailing" constant="10" id="XD8-A0-eNJ"/>
+                    <constraint firstItem="7hu-0J-k3L" firstAttribute="leading" secondItem="ZAN-VJ-Ifx" secondAttribute="leading" constant="10" id="dHy-qg-W8u"/>
+                    <constraint firstItem="7hu-0J-k3L" firstAttribute="top" secondItem="ZAN-VJ-Ifx" secondAttribute="top" constant="10" id="dL9-Dx-LFF"/>
+                    <constraint firstItem="7hu-0J-k3L" firstAttribute="leading" secondItem="fYG-Kz-6ds" secondAttribute="leading" id="l7S-Ub-CUw"/>
+                    <constraint firstItem="0aR-jx-dwl" firstAttribute="top" secondItem="cSr-ih-lqY" secondAttribute="bottom" constant="10" id="qXB-wr-cwj"/>
+                    <constraint firstItem="fYG-Kz-6ds" firstAttribute="top" secondItem="7hu-0J-k3L" secondAttribute="bottom" constant="10" id="tkr-qc-Kyp"/>
+                    <constraint firstItem="cSr-ih-lqY" firstAttribute="leading" secondItem="7hu-0J-k3L" secondAttribute="trailing" constant="3" id="xRg-fy-YWv"/>
+                    <constraint firstItem="cSr-ih-lqY" firstAttribute="trailing" secondItem="0aR-jx-dwl" secondAttribute="trailing" id="zbq-wX-UZp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="author" destination="fYG-Kz-6ds" id="hwl-MS-RIO"/>
+                <outlet property="date" destination="0aR-jx-dwl" id="cAN-wz-IEU"/>
+                <outlet property="shortID" destination="7hu-0J-k3L" id="0j1-ti-y1q"/>
+                <outlet property="title" destination="cSr-ih-lqY" id="pcm-Fr-8Al"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
